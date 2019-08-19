@@ -18,14 +18,14 @@ class Dashboard extends React.Component {
         <Controls
           locked={locked}
           closed={closed}
-          toggleLocked={this.toggleLocked}
+          mockLocked={this.mockLocked}
           toggleClosed={this.toggleClosed}
         />
       </>
     );
   }
 
-  toggleLocked = () => {
+  mockLocked = () => {
     this.setState(prev => ({ locked: !prev.locked }));
   };
 
